@@ -1,0 +1,15 @@
+@font-face {
+    font-family: "IF Kica";
+    src: url(/assets/fonts/ifkica-bold.woff2);
+    font-weight: 900;
+}
+@font-face {
+    font-family: "IF Kica";
+    src: url(/assets/fonts/ifkica-regular.woff2);
+    font-weight: 500;
+}
+@font-face {
+    font-family: "IF Kica";
+    src: url(/assets/fonts/ifkica-light.woff2);
+    font-weight: 300;
+}

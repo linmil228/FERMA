@@ -1,0 +1,228 @@
+@import url('reset.css');
+@import url('/assets/fonts/font.css');
+@import url('animations.css');
+
+main{
+    width: 1920px;
+    height: 1080px;
+    display: flex;
+    position: relative;
+}
+.left-colomn{
+    width: 22.5%;
+    height: 100%;
+    border: 1px solid black;
+    display: flex;
+    flex-direction: column;
+    align-content: space-between;
+}
+.left-up-square{
+    border: 1px solid black;
+    width: 100%;
+    height: calc(100%/3);
+}
+.left-down-square{
+    border: 1px solid black;
+    width: 100%;
+    height: calc(100%/3);
+}
+.main-logo-wrap{
+    width: 55%;
+    height: 100%;
+    border: 1px solid black;
+    display: flex;
+    flex-wrap: wrap;
+    flex-shrink: 2;
+}
+.right-colomn{
+    width: 22.5%;
+    height: 100%;
+    border: 1px solid black;
+    display: flex;
+    flex-direction: column;
+    align-content: space-between;
+}
+.square-letter{
+    height: calc(100%/3 - 2px);
+    width: calc(55%/2 + 235.045px);
+    border: 1px solid black;
+    font-family: "IF Kica";
+    font-weight: 900;
+}
+.right-up-square{
+    border: 1px solid black;
+    width: 100%;
+    height: calc(100%/3);
+}
+.right-down-square{
+    border: 1px solid black;
+    width: 100%;
+    height: calc(100%/3);
+}
+.second-screen{
+    width: 1920px;
+    height: 1080px;
+    display: flex;
+    position: relative;
+}
+.second-left-colomn{
+    width: 22.5%;
+    height: 100%;
+    background-color: #8C3651;
+}
+.center-part{
+    width: 55%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+.grass{
+    width: 100%;
+    height: 28.7%;
+    background-color: #004520;
+}
+.center-part-down{
+    width: 100%;
+    height: 71.3%;
+    border: 1px solid black;
+    display: flex;
+    flex-direction: row;
+}
+.center-part-down-left{
+    height: 100%;
+    width: 47%;
+}
+.center-part-down-right{
+    height: 100%;
+    width: 53%;
+}
+.tomato{
+    width: 100%;
+    height: 63%;
+    background-color: #DDECFF;
+}
+.dnk{
+    width: 100%;
+    height: 37%;
+    background-color: white;
+}
+.vitamins{
+    width: 100%;
+    height: 37%;
+    background-color: #004520;
+}
+.mushroom{
+    width: 100%;
+    height: 63%;
+    background-color: #8C3651;
+}
+.second-right-colomn{
+    width: 22.5%;
+    height: 100%;
+    background-color: #8C3651;
+    display: flex;
+    flex-direction: column;
+}
+.up-part-second-right-colomn{
+    width: 100%;
+    height: calc(100% / 1.5 + 48px);
+    background-color: #DDECFF;
+}
+.down-part-second-right-colomn{
+    width: 100%;
+    height: calc(100% / 3 + 49px);
+    background-color: #B30E15;
+}
+.tape{
+    width: 1920px;
+    height: 76px;
+    background-color: white;
+}
+.third-screen{
+    width: 1920px;
+    height: 1003px;
+    display: flex;
+    flex-direction: row;
+}
+.third-main-screen{
+    width: 77.5%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+.trees-and-tasty{
+    width: 100%;
+    height: 50%;
+    display: flex;
+    flex-direction: row;
+}
+.trees{
+    width: 50%;
+    height: 100%;
+    background-color: #B30E15;
+}
+.tasty{
+    width: 50%;
+    height: 100%;
+    background-color: #004520;
+}
+.gears{
+    width: 100%;
+    height: 50%;
+    background-color: #FAAB28;
+}
+.third-right-colomn{
+    width: 22.5%;
+    height: 100%;
+    background-color: #8C3651;
+}
+.forth-screen{
+    width: 1920px;
+    height: 1080px;
+    display: flex;
+    flex-direction: column;
+}
+.tape-robots{
+    width: 100%;
+    height:6%;
+    background-color: #DDECFF;
+}
+.play-fruits{
+    width: 100%;
+    height: 88%;
+    background-color: #FAAB28;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    font-family: "IF Kica";
+    font-weight: 900;
+    padding: 30px 0 0 0;
+}
+.up-text{
+    font-size: 24vh;
+    padding: 0 15px;
+    display: flex;
+    justify-content: center;
+}
+.down-text{
+    font-size: 26vh;
+    padding: 0 15px;
+    display: flex;
+    justify-content: center;
+}
+.footer{
+    width: 100%;
+    height:6%;
+    background-color: #DDECFF;
+}
+.fruits{
+    width: 100%;
+    height: 88%;
+    display: flex;
+    flex-direction: row;
+    div{
+        height: 100%;
+        width: calc(100%/4);
+        border: 1px solid black;
+    }
+}
