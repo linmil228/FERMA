@@ -2,6 +2,9 @@
 @import url('/assets/fonts/font.css');
 @import url('animations.css');
 
+*{
+    box-sizing:border-box;
+}
 main{
     width: 1920px;
     height: 1080px;
@@ -137,6 +140,16 @@ main{
     width: 1920px;
     height: 76px;
     background-color: white;
+    display: flex;
+    flex-direction: row;
+    gap: 30px;
+    align-items: center;
+    overflow: hidden;
+    p{
+        font-family: "IF Kica";
+        font-size: 50px;
+        font-weight: 500;
+    }
 }
 .third-screen{
     width: 1920px;
@@ -186,6 +199,16 @@ main{
     width: 100%;
     height:6%;
     background-color: #DDECFF;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 34px;
+    p{
+        font-size: 30px;
+        font-weight: 500;
+        font-family: "IF Kica";
+    }
 }
 .play-fruits{
     width: 100%;
@@ -214,6 +237,16 @@ main{
     width: 100%;
     height:6%;
     background-color: #DDECFF;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 34px;
+    p{
+        font-size: 30px;
+        font-weight: 500;
+        font-family: "IF Kica";
+    }
 }
 .fruits{
     width: 100%;
@@ -224,5 +257,31 @@ main{
         height: 100%;
         width: calc(100%/4);
         border: 1px solid black;
+    }
+}
+@media (max-width: 1536px){
+    main{
+        width: 1536px;
+        height: 736px;
+    }
+    .forth-screen{
+        width: 1536px;
+        height: 736px;
+    }
+    .third-screen{
+        width: 1536px;
+        height: 802px;
+    }
+    .tape{
+        width: 1536px;
+        height: 61px;
+        padding: 27px;
+        p{
+            font-size: 24px;
+        }
+    }
+    .second-screen{
+        width: 1536px;
+        height: 1080px;
     }
 }
