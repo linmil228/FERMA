@@ -12,12 +12,25 @@ main{
     position: relative;
     background-image: url("../assets/photos/main-screen-background.svg");
 }
+span{
+    width: fit-content;
+    height: fit-content;
+    background-color: white;
+    border: 2px solid white;
+    margin: 0;
+    display: flex;
+}
 .left-colomn{
     width: 22.5%;
     height: 100%;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+}
+.left-middle-square{
+    width: 100%;
+    height: calc(100%/3);
+    background-image: url("../assets/photos/middle-left-square-background.svg");
 }
 .left-up-square{
     width: 100%;
@@ -56,12 +69,13 @@ main{
     color: #121B13;
 }
 .letter-F{
-
+    background-image: url("../assets/photos/letter-f-background.svg");
     p{
         rotate: 30deg;
     }
 }
 .letter-E{
+    background-image: url("../assets/photos/letter-a-background.svg");
     p{
         rotate: -9deg;
     }
@@ -75,6 +89,7 @@ main{
 .letter-M{
     display: flex;
     justify-content: center;
+    background-image: url("../assets/photos/letter-m-background.svg");
     p{
         rotate: 10deg;
     }
@@ -82,6 +97,7 @@ main{
 .letter-A{
     display: flex;
     justify-content: center;
+    background-image: url("../assets/photos/letter-a-background.svg");
     p{
         rotate: -7deg;
     }
@@ -97,6 +113,11 @@ main{
 }
 .right-up-square{
     background-image: url("../assets/photos/right-up-square-backround.svg");
+    width: 100%;
+    height: calc(100%/3);
+}
+.right-middle-square{
+    background-image: url("../assets/photos/right-middle-square-backround.svg");
     width: 100%;
     height: calc(100%/3);
 }
@@ -157,6 +178,7 @@ main{
     height: 28.7%;
     background-color: #004520;
     background-image: url("../assets/photos/grass.svg");
+    background-size: cover;
 }
 .center-part-down{
     width: 100%;
@@ -189,6 +211,7 @@ main{
     display: flex;
     align-items: center;
     justify-content: center;
+    background-size: cover;
     div{
         background-color: white;
         display: flex;
@@ -212,7 +235,14 @@ main{
         display: flex;
         flex-direction: row;
         gap: 10px;
+        font-size: 41px;
+        background-color: white;
+        width: 344px;
     }
+}
+.vitamins-span{
+    width: 344px;
+    height: 43px;
 }
 .mushroom{
     width: 100%;
@@ -279,7 +309,7 @@ main{
 }
 .trees-and-tasty{
     width: 100%;
-    height: 50%;
+    height: 30%;
     display: flex;
     flex-direction: row;
 }
@@ -290,6 +320,7 @@ main{
     display: flex;
     justify-content: center;
     gap: 21px;
+    overflow: hidden;
 }
 .inverted-tree{
     rotate: 180deg;
@@ -300,19 +331,24 @@ main{
     background-color: #004520;
     display: flex;
     flex-direction: column;
-    align-items: center;
+    align-items: flex-start;
     font-family: "IF Kica";
     font-size: 51px;
     justify-content: space-between;
     padding: 56px 45px;
 }
+.span-tasty{
+    width: 392px;
+    height: 180px;
+}
 .gears{
     width: 100%;
-    height: 50%;
+    height: 40%;
     background-color: #FAAB28;
     gap: 4%;
     display: flex;
     flex-direction: column;
+    overflow: hidden;
     img{
         width: 424px;
         height: 464px;
@@ -327,6 +363,7 @@ main{
     gap: 47px;
     justify-content: center;
     align-items: flex-end;
+    overflow: hidden;
 }
 .down-gears{
     width: 100%;
@@ -337,13 +374,12 @@ main{
     gap: 47px;
     justify-content: center;
     align-items: flex-start;
+    overflow: hidden;
     img{
         rotate: 180deg;
     }
 }
 .third-right-colomn{
-    width: 22.5%;
-    height: 100%;
     background-color: #8C3651;
     display: flex;
     flex-direction: column;
@@ -352,6 +388,13 @@ main{
     justify-content: center;
     align-items: center;
     padding: 0 81px;
+    width: 100%;
+    height: 30%;
+}
+.tomatos{
+    width: 22.5%;
+    height: 100%;
+    overflow: hidden;
 }
 .circle{
     width: 200px;
@@ -364,7 +407,7 @@ main{
 }
 .forth-screen{
     width: 1920px;
-    height: 1080px;
+    height: 736px;
     display: flex;
     flex-direction: column;
 }
@@ -383,30 +426,6 @@ main{
         font-family: "IF Kica";
     }
 }
-.play-fruits{
-    width: 100%;
-    height: 88%;
-    background-color: #FAAB28;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    font-family: "IF Kica";
-    font-weight: 900;
-    padding: 13px 0 0 0;
-}
-.up-text{
-    font-size: 225px;
-    padding: 23px 15px;
-    display: flex;
-    justify-content: center;
-}
-.down-text{
-    font-size: 265px;
-    height: 198px;
-    padding: 0 15px;
-    display: flex;
-    justify-content: center;
-}
 .footer{
     width: 100%;
     height:6%;
@@ -422,16 +441,87 @@ main{
         font-family: "IF Kica";
     }
 }
-.fruits{
+.container{
+    position: relative;
     width: 100%;
     height: 88%;
+    background-color: #FAAB28;
+    overflow: hidden;
+}
+.rotated-texture{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    z-index: 1;
+    top: 0;
+    left: 0;
+}
+.play-fruits{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    font-family: "IF Kica";
+    font-weight: 900;
+    padding: 13px 0 0 0;
+    position: absolute;
+    z-index: 2;
+    top: 0;
+    left: 0;
+}
+.up-text{
+    font-size: 225px;
+    padding: 23px 15px;
+    display: flex;
+    justify-content: center;
+}
+.down-text{
+    font-size: 265px;
+    height: 198px;
+    padding: 0 15px;
+    display: flex;
+    justify-content: center;
+}
+.fallen-fruits{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    z-index: 3;
     display: flex;
     flex-direction: row;
+    top: 0;
+    left: 0;
+    position: relative;
     div{
         height: 100%;
-        width: calc(100%/4);
-        border: 1px solid black;
+        width: fit-content;
     }
+}
+.fruit1{
+    position: absolute;
+    z-index: 2;
+    left: 50px;
+}
+.fruit2{
+    position: absolute;
+    z-index: 1;
+    left: 400px;
+}
+.fruit3{
+    position: absolute;
+    z-index: 3;
+    left: 700px;
+}
+.fruit4{
+    position: absolute;
+    z-index: 2;
+    left: 1000px;
+}
+.fruit5{
+    position: absolute;
+    z-index: 1;
+    left: 1400px;
 }
 .dekstop-only{
     display: inherit;
@@ -443,6 +533,18 @@ main{
     main{
         width: 1536px;
         height: 736px;
+        background-size: cover;
+    }
+    .square-letter{
+        font-size: 680px;
+        position: relative;
+        p{
+            position: absolute;
+            top: -195px;
+        }
+    }
+    .letter-info{
+        font-size: 24px;
     }
     .forth-screen{
         width: 1536px;
@@ -467,6 +569,73 @@ main{
     .square-letter{
         width: calc(864px / 2 - 10.5px);
     }
+    .vitamins{
+        font-size: 29px;
+        div{
+            font-size: 33px;
+            width: 280px;
+        }
+    }
+    .vitamins-span{
+        width: 280px;
+    }
+    .tomato{
+        img{
+            width: 130%;
+        }
+    }
+    .dnk{
+        div{
+            font-size: 26px;
+        }
+    }
+    .up-part-second-right-colomn{
+        position: relative;
+        img{
+            width: 80%;
+        }
+    }
+    .onion2{
+        position: absolute;
+        top: 160px;
+        left: -50px;
+        img{
+            width: 130%;
+        }
+    }
+    .mushroom{
+        img{
+            width: 160%;
+        }
+    }
+    .trees{
+        img{
+            width: 75%;
+        }
+    }
+    .tasty{
+        font-size: 40px;
+        padding: 35px 36px;
+    }
+    .span-tasty{
+        width: 308px;
+    }
+    .circle{
+        width: 160px;
+        height: 160px;
+    }
+    .third-right-colomn{
+        gap: 22px;
+        img{
+            width: 130px;
+        }
+    }
+    .gears{
+        img{
+            width: 339px;
+            height: 371px;
+        }
+    }
     .tape-robots{
         height: 53px;
         padding: 0 27px;
@@ -489,11 +658,46 @@ main{
         font-size:212px;
         height: 160px;
     }
+    .rotated-texture{
+        top: -10px;
+        left: -170px;
+        width: fit-content;
+        height: fit-content;
+    }
+    .fallen-fruits{
+        img{
+            width: 75%;
+            height: 75%;
+        }
+    }
+    .fruit2{
+        left:300px
+    }
+    .fruit3{
+        left: 550px;
+    }
+    .fruit4{
+        left:850px;
+    }
+    .fruit5{
+        width: 80%;
+        left: 1100px;
+    }
 }
 @media (max-width: 1280px){
     main{
         width: 1280px;
         height: 800px;
+        background-size: cover;
+    }
+    .square-letter{
+        font-size: 567px;
+        p{
+            position: static;
+        }
+    }
+    .letter-info{
+        font-size: 20px;
     }
     .forth-screen{
         width: 1280px;
@@ -517,6 +721,50 @@ main{
     }
     .square-letter{
         width: calc(720px / 2 - 9px);
+    }
+    .vitamins{
+        font-size: 24px;
+        div{
+            font-size: 37px;
+            width: 310px;
+        }
+    }
+    .vitamins-span{
+        width: 291px;
+    }
+    .tomato{
+        img{
+            width: 155%;
+        }
+    }
+    .dnk{
+        div{
+            font-size: 22px;
+        }
+    }
+    .mushroom{
+        position: relative;
+        img{
+            position: absolute;
+            left: -80px;
+            width: 190%;
+        }
+    }
+    .down-part-second-right-colomn{
+        img{
+            width: 150%;
+        }
+    }
+    .trees{
+        img{
+            width: 95%;
+        }
+    }
+    .gears{
+        img{
+            width: 282px;
+            height: 309px;
+        }
     }
     .tape-robots{
         height: 46px;
@@ -551,6 +799,54 @@ main{
     main{
         width: 768px;
         height: 1024px;
+        background-size: cover;
+    }
+    .square-letter{
+        font-size: 614px;
+    }
+    .letter-info{
+        font-size: 22px;
+    }
+    .grass{
+        background-position-x: center;
+    }
+    .tomato{
+        img{
+            width: 170%;
+        }
+    }
+    .mushroom{
+        img{
+            width: 230%;
+        }
+    }
+    .dnk{
+        div{
+            font-size: 24px;
+        }
+    }
+    .vitamins{
+        font-size: 26px;
+        div{
+            font-size: 30px;
+            width: 260px;
+        }
+    }
+    .trees{
+        img{
+            width: 150%;
+        }
+    }
+    .vitamins-span{
+        width: 260px;
+        height: 80px;
+    }
+    .tasty{
+        font-size: 26px;
+    }
+    .span-tasty{
+        width: 201.5px;
+        height: 350px;
     }
     .forth-screen{
         width: 768px;
@@ -612,6 +908,12 @@ main{
             font-size: 12px;
         }
     }
+    .gears{
+        height: 30%;
+    }
+    .up-gears{
+        height: 30%;
+    }
     .footer{
         height: 28px;
         padding: 0 13px;
@@ -642,6 +944,13 @@ main{
     main{
         width: 320px;
         height: 475px;
+        background-size: cover;
+    }
+    .square-letter{
+        font-size: 256px;
+    }
+    .letter-info{
+        font-size: 10px;
     }
     .forth-screen{
         width: 320px;
