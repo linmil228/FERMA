@@ -834,7 +834,7 @@ span{
     }
     .trees{
         img{
-            width: 150%;
+            width: 90%;
         }
     }
     .vitamins-span{
@@ -854,16 +854,23 @@ span{
     }
     .third-screen{
         width: 768px;
-        height: 994px;
+        height: 1024px;
         flex-direction: column;
     }
     .third-main-screen{
         width: 100%;
-        height: 1024px;
+        height: 516px;
+    }
+    .tomatos{
+        height: 508px;
+        width: 100%;
+        display: flex;
+        align-items: center;
     }
     .third-right-colomn{
         width: 100%;
-        height: 50%;
+        rotate: 90deg;
+        height: 768px;
     }
     .tape{
         width: 768px;
@@ -909,10 +916,13 @@ span{
         }
     }
     .gears{
-        height: 30%;
+        height: 50%;
     }
     .up-gears{
-        height: 30%;
+        height: 50%;
+    }
+    .trees-and-tasty{
+        height: 50%;
     }
     .footer{
         height: 28px;
@@ -927,12 +937,31 @@ span{
     }
     .down-text{
         font-size:106px;
-        height: 80px;
+        height: 148px;
     }
     .play-fruits{
         height: 970px;
     }
-
+    .fallen-fruits{
+        div{
+            height: 75%;
+        }
+    }
+    .fruit1{
+        left: 10px;
+    }
+    .fruit2{
+        left: 100px;
+    }
+    .fruit3{
+        left: 250px;
+    }
+    .fruit4{
+        left: 350px;
+    }
+    .fruit5{
+        left: 450px;
+    }
 }
 @media (max-width: 320px){
     .dekstop-only{
@@ -950,7 +979,48 @@ span{
         font-size: 256px;
     }
     .letter-info{
+        font-size: 8px;
+    }
+    .dnk{
+        div{
+            font-size: 10px;
+            padding: 3px;
+        }
+    }
+    .tomato{
+        img{
+            width: 195%;
+        }
+    }
+    .vitamins{
         font-size: 10px;
+        padding: 7px 11px;
+        div{
+            font-size: 12px;
+            width: 110px;
+        }
+    }
+    .vitamins-span{
+        width: 110px;
+    }
+    .onion2{
+        top: -60px;
+        left: -350px;
+        img{
+            width: 70%;
+        }
+    }
+    .trees{
+        img{
+            width: 100%;
+        }
+    }
+    .tasty{
+        font-size: 10px;
+        padding: 12px 10px;
+    }
+    .span-tasty{
+        width: 79.5px;
     }
     .forth-screen{
         width: 320px;
@@ -963,11 +1033,7 @@ span{
     }
     .third-main-screen{
         width: 100%;
-        height: 475px;
-    }
-    .third-right-colomn{
-        width: 100%;
-        height: 50%;
+        height: 215px;
     }
     .tape{
         width: 320px;
@@ -975,6 +1041,26 @@ span{
         gap: 5px;
         p{
             font-size: 8px;
+        }
+    }
+    .gears{
+        img{
+            width: 91px;
+            height: 99px;
+        }
+    }
+    .up-gears{
+        gap: 10px;
+    }
+    .down-gears{
+        gap: 10px;
+    }
+    .circle{
+        width: 63px;
+        height: 63px;
+        img{
+            width: 55px;
+            height: 55px;
         }
     }
     .second-screen{
@@ -1025,11 +1111,30 @@ span{
     }
     .down-text{
         font-size:44px;
-        height: 33px;
+        height: 65px;
     }
     .play-fruits{
         height: 451px;
         padding: 6px 0 0 0;
     }
-
+    .fallen-fruits{
+        div{
+            height: 70%;
+        }
+    }
+    .fruit1{
+        left: 5px;
+    }
+    .fruit2{
+        left: 50px;
+    }
+    .fruit3{
+        left: 100px;
+    }
+    .fruit4{
+        left: 150px;
+    }
+    .fruit5{
+        left: 200px;
+    }
 }
