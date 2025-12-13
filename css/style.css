@@ -303,7 +303,7 @@ span{
 }
 .third-main-screen{
     width: 77.5%;
-    height: 100%;
+    height: 143%;
     display: flex;
     flex-direction: column;
 }
@@ -389,7 +389,6 @@ span{
     align-items: center;
     padding: 0 81px;
     width: 100%;
-    height: 30%;
 }
 .tomatos{
     width: 22.5%;
