@@ -406,7 +406,7 @@ span{
 }
 .forth-screen{
     width: 1920px;
-    height: 736px;
+    height: 1080px;
     display: flex;
     flex-direction: column;
 }
