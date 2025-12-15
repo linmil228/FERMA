@@ -5,6 +5,12 @@
 *{
     box-sizing:border-box;
 }
+body{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #94A0AF;
+}
 main{
     width: 1920px;
     height: 1080px;
@@ -31,16 +37,19 @@ span{
     width: 100%;
     height: calc(100%/3);
     background-image: url("../assets/photos/middle-left-square-background.svg");
+    background-size: cover;
 }
 .left-up-square{
     width: 100%;
     height: calc(100%/3);
     background-image: url("../assets/photos/left-up-square-background.svg");
+    background-size: cover;
 }
 .left-down-square{
     width: 100%;
     height: calc(100%/3);
     background-image: url("../assets/photos/left-down-square-background.svg");
+    background-size: cover;
 }
 .main-logo-wrap{
     width: 55%;
@@ -70,18 +79,21 @@ span{
 }
 .letter-F{
     background-image: url("../assets/photos/letter-f-background.svg");
+    background-size: cover;
     p{
         rotate: 30deg;
     }
 }
 .letter-E{
     background-image: url("../assets/photos/letter-a-background.svg");
+    background-size: cover;
     p{
         rotate: -9deg;
     }
 }
 .letter-R{
     background-image: url("../assets/photos/letter-r-background.svg");
+    background-size: cover;
     p{
         rotate: -9deg;
     }
@@ -90,6 +102,7 @@ span{
     display: flex;
     justify-content: center;
     background-image: url("../assets/photos/letter-m-background.svg");
+    background-size: cover;
     p{
         rotate: 10deg;
     }
@@ -98,12 +111,14 @@ span{
     display: flex;
     justify-content: center;
     background-image: url("../assets/photos/letter-a-background.svg");
+    background-size: cover;
     p{
         rotate: -7deg;
     }
 }
 .letter-info{
     background-image: url("../assets/photos/letter-info-background.svg");
+    background-size: cover;
     font-family: "IF Kica";
     font-size: 31px;
     font-weight: 500;
@@ -113,16 +128,19 @@ span{
 }
 .right-up-square{
     background-image: url("../assets/photos/right-up-square-backround.svg");
+    background-size: cover;
     width: 100%;
     height: calc(100%/3);
 }
 .right-middle-square{
     background-image: url("../assets/photos/right-middle-square-backround.svg");
+    background-size: cover;
     width: 100%;
     height: calc(100%/3);
 }
 .right-down-square{
     background-image: url("../assets/photos/right-down-square-backround.svg");
+    background-size: cover;
     width: 100%;
     height: calc(100%/3);
 }
@@ -452,8 +470,9 @@ span{
     height: 100%;
     position: absolute;
     z-index: 1;
-    top: 0;
-    left: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 .play-fruits{
     width: 100%;
@@ -467,7 +486,7 @@ span{
     position: absolute;
     z-index: 2;
     top: 0;
-    left: 0;
+    left: -25px;
 }
 .up-text{
     font-size: 225px;
@@ -960,8 +979,11 @@ span{
     .fruit5{
         left: 450px;
     }
+    .rotated-texture{
+        rotate: 90deg;
+    }
 }
-@media (max-width: 320px){
+@media (max-width: 431px){
     .dekstop-only{
         display: none;
     }
@@ -969,7 +991,7 @@ span{
         display: flex;
     }
     main{
-        width: 320px;
+        width: 100%;
         height: 475px;
         background-size: cover;
     }
@@ -1021,11 +1043,11 @@ span{
         width: 79.5px;
     }
     .forth-screen{
-        width: 320px;
+        width: 100%;
         height: 475px;
     }
     .third-screen{
-        width: 320px;
+        width: 100%;
         height: 462px;
         flex-direction: column;
     }
@@ -1034,7 +1056,7 @@ span{
         height: 215px;
     }
     .tape{
-        width: 320px;
+        width: 100%;
         height: 13px;
         gap: 5px;
         p{
@@ -1062,7 +1084,7 @@ span{
         }
     }
     .second-screen{
-        width: 320px;
+        width: 100%;
         height: fit-content;
         grid-template-columns: [start] 50% [line2] 50% [end];
         grid-template-rows: [row1-start] 475px [row1-end] 475px [last];

@@ -1,0 +1,250 @@
+.left-middle-square{
+    animation: anotherBackgroundLM 1.5s infinite linear;
+}
+@keyframes anotherBackgroundLM {
+    0%{
+        background-image: url("../assets/photos/middle-left-square-background.svg");
+    }
+    50%{
+        background-image: url("../assets/photos/right-middle-square-backround.svg");
+    }
+    100%{
+        background-image: url("../assets/photos/middle-left-square-background.svg");
+    }
+}
+.left-up-square{
+    animation: anotherBackgroundLU 1.5s infinite linear;
+}
+@keyframes anotherBackgroundLU {
+    0%{
+        background-image: url("../assets/photos/left-up-square-background.svg");
+    }
+    50%{
+        background-image: url("../assets/photos/right-up-square-backround.svg");
+    }
+    100%{
+        background-image: url("../assets/photos/left-up-square-background.svg");
+    }
+}
+.left-down-square{
+    animation: anotherBackgroundLD 1.5s infinite linear;
+}
+@keyframes anotherBackgroundLD {
+    0%{
+        background-image: url("../assets/photos/left-down-square-background.svg");
+    }
+    50%{
+        background-image: url("../assets/photos/right-down-square-backround.svg");
+    }
+    100%{
+        background-image: url("../assets/photos/left-down-square-background.svg");
+    }
+}
+.right-up-square{
+    animation: anotherBackgroundRU 1.5s infinite linear;
+}
+@keyframes anotherBackgroundRU {
+    0%{
+        background-image: url("../assets/photos/right-up-square-backround.svg");
+    }
+    50%{
+        background-image: url("../assets/photos/left-up-square-background.svg");
+    }
+    100%{
+        background-image: url("../assets/photos/right-up-square-backround.svg");
+    }
+}
+.right-middle-square{
+    animation: anotherBackgroundRM 1.5s infinite linear;
+}
+@keyframes anotherBackgroundRM {
+    0%{
+        background-image: url("../assets/photos/right-middle-square-backround.svg");
+    }
+    50%{
+        background-image: url("../assets/photos/middle-left-square-background.svg");
+    }
+    100%{
+        background-image: url("../assets/photos/right-middle-square-backround.svg");
+    }
+}
+.right-down-square{
+    animation: anotherBackgroundRD 1.5s infinite linear;
+}
+@keyframes anotherBackgroundRD {
+    0%{
+        background-image: url("../assets/photos/right-down-square-backround.svg");
+    }
+    50%{
+        background-image: url("../assets/photos/left-down-square-background.svg");
+    }
+    100%{
+        background-image: url("../assets/photos/right-down-square-backround.svg");
+    }
+}
+.letter-F{
+    animation: anotherBackgroundF 1.5s infinite linear;
+    p{
+        animation: rotateF 7s infinite;
+        transform-origin: center;
+    }
+}
+@keyframes rotateF {
+    0% { 
+        transform: rotate(0deg); 
+    }
+    10%,20% { 
+        transform: rotate(30deg);
+    }
+    30%,40%,50% {   
+        transform: rotate(0deg); 
+    }
+    60%, 70%{ 
+        transform: rotate(-50deg); 
+    }
+    80%, 90%, 100%{ 
+        transform: rotate(0deg); 
+    }
+}
+@keyframes anotherBackgroundF {
+    0%{
+        background-image: url("../assets/photos/letter-f-background.svg");
+        transform: rotate(0deg);
+    }
+    25%{
+    }
+    50%{
+        background-image: url("../assets/photos/letter-e-background.svg");
+    }
+    100%{
+        background-image: url("../assets/photos/letter-f-background.svg");
+    }
+}
+.letter-E{
+    animation: anotherBackgroundE 1.5s infinite linear;
+    p{
+        animation: rotateE 7s infinite;
+        transform-origin: center;
+    }
+}
+@keyframes rotateE {
+    0% { 
+        transform: rotate(0deg); 
+    }
+    10%,20% { 
+        transform: rotate(-30deg);
+    }
+    30%,40%,50% {   
+        transform: rotate(0deg); 
+    }
+    60%, 70%{ 
+        transform: rotate(50deg); 
+    }
+    80%, 90%, 100%{ 
+        transform: rotate(0deg); 
+    }
+}
+@keyframes anotherBackgroundE {
+    0%{
+        background-image: url("../assets/photos/letter-e-background.svg");
+    }
+    50%{
+        background-image: url("../assets/photos/letter-f-background.svg");
+    }
+    100%{
+        background-image: url("../assets/photos/letter-e-background.svg");
+    }
+}
+.letter-R{
+    animation: anotherBackgroundR 1.5s infinite linear;
+    p{
+        animation: rotateE 7s infinite;
+        transform-origin: center;
+    }
+}
+@keyframes anotherBackgroundR {
+    0%{
+        background-image: url("../assets/photos/letter-r-background.svg");
+    }
+    50%{
+        background-image: url("../assets/photos/letter-info-background.svg");
+    }
+    100%{
+        background-image: url("../assets/photos/letter-r-background.svg");
+    }
+}
+.letter-M{
+    animation: anotherBackgroundM 1.5s infinite linear;
+    p{
+        animation: rotateF 7s infinite;
+        transform-origin: center;
+    }
+}
+@keyframes anotherBackgroundM {
+    0%{
+        background-image: url("../assets/photos/letter-m-background.svg");
+    }
+    50%{
+        background-image: url("../assets/photos/letter-a-background.svg");
+    }
+    100%{
+        background-image: url("../assets/photos/letter-m-background.svg");
+    }
+}
+.letter-A{
+    animation: anotherBackgroundA 1.5s infinite linear;
+    p{
+        animation: rotateE 7s infinite;
+        transform-origin: center;
+    }
+}
+@keyframes anotherBackgroundA {
+    0%{
+        background-image: url("../assets/photos/letter-a-background.svg");
+    }
+    50%{
+        background-image: url("../assets/photos/letter-m-background.svg");
+    }
+    100%{
+        background-image: url("../assets/photos/letter-a-background.svg");
+    }
+}
+.letter-info{
+    animation: anotherBackgroundInfo 1.5s infinite linear;
+}
+@keyframes anotherBackgroundInfo {
+    0%{
+        background-image: url("../assets/photos/letter-info-background.svg");
+    }
+    50%{
+        background-image: url("../assets/photos/letter-r-background.svg");
+    }
+    100%{
+        background-image: url("../assets/photos/letter-info-background.svg");
+    }
+}
+.rotated-texture{
+    img{
+        animation: rotateTexture 30s infinite linear;
+        transform-origin: center;
+    }
+}
+@keyframes rotateTexture {
+    0%{
+        rotate: 0deg;
+    }
+    100%{
+        rotate: 360deg;
+    }
+}
+.play-fruits{
+    animation: weightText 1.5s infinite linear;
+}
+@keyframes weightText{
+    0%{
+        font-style: italic;
+    }
+    100%{
+        font-style: normal;
+    }
+}
