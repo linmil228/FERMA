@@ -477,24 +477,56 @@
     }
 }
 .circle{
-    transition: all 0.5s cubic-bezier(0.68, -0.55, 0.265, 1.55);
-    animation: fallDown 20s infinite linear;
+    transition: all 0.5s linear;
+    animation: fallDown 15s infinite linear;
     cursor: pointer;
+    .img{
+        animation: rotateTomato 5s infinite linear;
+    }
 }
 
 @keyframes fallDown{
     0% {
-        transform: translateY(-1000px) rotate(0deg);
-        opacity: 0;
+        transform: translateY(-1000px);
     }
-    10% {
+    99.9% {
+        transform: translateY(500px);
+    }
+    100%{
+        transform: translateY(-1000px);
+    }
+}
+@keyframes rotateTomato{
+    0% {
+        transform: rotate(0deg);
+    }
+    100%{
+        transform: rotate(360deg);
+    }
+}
+.vitamin-letter::before{
+    content: 'D';
+    animation: changeLetter 5s infinite;
+}
+@keyframes changeLetter{
+    0%, 20%{
         opacity: 1;
+        content: 'D';
     }
-    90% {
-        opacity: 0.8;
+    25%, 45%{
+        opacity: 1;
+        content: 'C';
     }
-    100% {
-        transform: translateY(500px) rotate(360deg);
-        opacity: 0;
+    50%, 70%{
+        opacity: 1;
+        content: 'A';
+    }
+    75%, 95%{
+        opacity: 1;
+        content: 'B';
+    }
+    100%{
+        opacity: 1;
+        content: 'D';
     }
 }
