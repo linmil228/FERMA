@@ -374,7 +374,7 @@ span{
     }
 }
 .up-gears{
-    width: 100%;
+    width: 200%;
     height: 48%;
     overflow: hidden;
     display: flex;
@@ -385,7 +385,7 @@ span{
     overflow: hidden;
 }
 .down-gears{
-    width: 100%;
+    width: 200%;
     height: 48%;
     overflow: hidden;
     display: flex;
@@ -422,6 +422,9 @@ span{
     display: flex;
     align-items: center;
     justify-content: center;
+    img{
+        opacity: 0;
+    }
 }
 .forth-screen{
     width: 1920px;

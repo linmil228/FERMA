@@ -389,3 +389,112 @@
         background-position-y: c;
     }
 }
+.trees{
+    div{
+        animation: growTrees 6s infinite cubic-bezier(0.68, -0.55, 0.265, 1.55);
+    }
+}
+@keyframes growTrees{
+    0%,100% {
+    transform: scale(0.1);
+    opacity: 0.5;
+  }
+  25% {
+    transform: scale(1.2);
+    opacity: 1;
+  }
+  50% {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+.up-gears{
+    animation: moveLeft 15s infinite linear;
+    img{
+        animation: rotateUp 3s infinite linear
+    }
+}
+.down-gears{
+    animation: moveRight 15s infinite linear;
+    img{
+        animation: rotateDown 3s infinite linear
+    }
+}
+.gear1{
+    animation-duration: 2s;
+}
+.gear2{
+    animation-duration: 3s;
+}
+.gear3{
+    animation-duration: 4s;
+}
+.gear4{
+    animation-duration: 2.5s;
+}
+.gear5{
+    animation-duration: 3.5s;
+}
+.gear6{
+    animation-duration: 4.5s;
+}
+@keyframes moveLeft{
+      0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+@keyframes moveRight {
+      0% {
+    transform: translateX(-50%);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+@keyframes rotateUp{
+      0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+@keyframes rotateDown{
+      0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+.circle:hover{
+    animation-play-state: paused;
+    img{
+        opacity: 1;
+    }
+}
+.circle{
+    transition: all 0.5s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+    animation: fallDown 20s infinite linear;
+    cursor: pointer;
+}
+
+@keyframes fallDown{
+    0% {
+        transform: translateY(-1000px) rotate(0deg);
+        opacity: 0;
+    }
+    10% {
+        opacity: 1;
+    }
+    90% {
+        opacity: 0.8;
+    }
+    100% {
+        transform: translateY(500px) rotate(360deg);
+        opacity: 0;
+    }
+}
