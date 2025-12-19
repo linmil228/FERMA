@@ -161,6 +161,7 @@ span{
     div{
         display: flex;
         width: 100%;
+        cursor: pointer;
     }
 }
 .fallen1{
@@ -229,7 +230,6 @@ span{
     display: flex;
     align-items: center;
     justify-content: center;
-    background-size: cover;
     div{
         background-color: white;
         display: flex;
@@ -297,6 +297,7 @@ span{
     height: calc(100% / 3 + 49px);
     background-color: #B30E15;
     overflow: hidden;
+    position: relative;
 }
 .tape{
     width: 1920px;
