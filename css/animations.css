@@ -530,3 +530,39 @@
         content: 'D';
     }
 }
+.tape-things{
+    animation: runTape 10s linear infinite;
+}
+.tape-things2{
+    animation: runTape 10s linear infinite;
+}
+@keyframes runTape{
+    0%{
+        transform: translateX(0);
+    }
+    100%{
+        transform: translateX(100%);
+    }
+}
+.tape-robots-original{
+    animation: blinkTape 1s infinite;
+}
+@keyframes blinkTape{
+    0%, 49.9%, 100%{
+        opacity: 1;
+    }
+    50%, 99.9%{
+        opacity: 0;
+    }
+}
+.tape-robots-alt{
+    animation: blinkAlt 1s infinite;
+}
+@keyframes blinkAlt{
+    0%, 49.9%, 100%{
+        opacity: 0;
+    }
+    50%, 99.9%{
+        opacity: 1;
+    }
+}
