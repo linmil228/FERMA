@@ -687,6 +687,18 @@
 .fruit1:hover{
     animation-play-state:paused;
 }
+.fruit2:hover{
+    animation-play-state:paused;
+}
+.fruit3:hover{
+    animation-play-state:paused;
+}
+.fruit4:hover{
+    animation-play-state:paused;
+}
+.fruit5:hover{
+    animation-play-state:paused;
+}
 @keyframes fallFruit1{
     0% {
         transform: translateY(-300px) translateX(-150px) rotateZ(0deg) scale(0.8);
