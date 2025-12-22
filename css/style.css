@@ -493,7 +493,7 @@ span{
 .container{
     position: relative;
     width: 100%;
-    height: 88%;
+    height: 100%;
     background-color: #FAAB28;
     overflow: hidden;
 }
@@ -536,53 +536,47 @@ span{
 .fallen-fruits{
     width: 100%;
     height: 100%;
-    position: absolute;
     z-index: 3;
-    display: flex;
-    flex-direction: row;
-    top: 0;
-    left: 0;
     position: relative;
-    div{
-        height: 100%;
-        width: fit-content;
+    img{
+        width: 30%;
     }
 }
 .fruit1{
     position: absolute;
     z-index: 2;
-    left: 50px;
+    left: 2%;
+    top: -10%;
 }
 .fruit2{
     position: absolute;
     z-index: 1;
-    left: 400px;
+    left: 18%;
+    top: -50%;
 }
 .fruit3{
     position: absolute;
     z-index: 3;
-    left: 700px;
+    left: 36%;
+    top: -30%;
 }
 .fruit4{
     position: absolute;
     z-index: 2;
-    left: 1000px;
+    left: 52%;
+    top: 5%;
 }
 .fruit5{
     position: absolute;
     z-index: 1;
-    left: 1400px;
+    left: 68%;
+    top: -10%;
 }
 .dekstop-only{
     display: inherit;
 }
 .mobile-only{
     display: none;
-}
-@media (max-width: 1819px) and (min-width:1535px){
-    main{
-        width: 100%;
-    }
 }
 @media (max-width: 1536px){
     main{
@@ -712,31 +706,6 @@ span{
     .down-text{
         font-size:212px;
         height: 160px;
-    }
-    .rotated-texture{
-        top: -10px;
-        left: -170px;
-        width: fit-content;
-        height: fit-content;
-    }
-    .fallen-fruits{
-        img{
-            width: 75%;
-            height: 75%;
-        }
-    }
-    .fruit2{
-        left:300px
-    }
-    .fruit3{
-        left: 550px;
-    }
-    .fruit4{
-        left:850px;
-    }
-    .fruit5{
-        width: 80%;
-        left: 1100px;
     }
 }
 @media (max-width: 1280px){
@@ -993,31 +962,12 @@ span{
         font-size:106px;
         height: 148px;
     }
-    .play-fruits{
-        height: 970px;
-    }
-    .fallen-fruits{
-        div{
-            height: 75%;
-        }
-    }
-    .fruit1{
-        left: 10px;
-    }
-    .fruit2{
-        left: 100px;
-    }
-    .fruit3{
-        left: 250px;
-    }
-    .fruit4{
-        left: 350px;
-    }
-    .fruit5{
-        left: 450px;
-    }
     .rotated-texture{
         rotate: 90deg;
+    }
+    .play-fruits{
+        height: 107%;
+        padding: 10px 0 0 30px;
     }
 }
 @media (max-width: 431px){
@@ -1171,27 +1121,6 @@ span{
         height: 65px;
     }
     .play-fruits{
-        height: 451px;
-        padding: 6px 0 0 0;
-    }
-    .fallen-fruits{
-        div{
-            height: 70%;
-        }
-    }
-    .fruit1{
-        left: 5px;
-    }
-    .fruit2{
-        left: 50px;
-    }
-    .fruit3{
-        left: 100px;
-    }
-    .fruit4{
-        left: 150px;
-    }
-    .fruit5{
-        left: 200px;
+        padding: 6px 0 0 40px;
     }
 }
