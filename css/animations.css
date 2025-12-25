@@ -670,19 +670,19 @@
     }
 }
 .fruit1{
-    animation: fallFruit1 10s ease-in-out infinite;
+    animation: fallFruit1 5s ease-in infinite;
 }
 .fruit2{
-    animation: fallFruit2 10s ease-in-out infinite;
+    animation: fallFruit2 5s ease-in infinite;
 }
 .fruit3{
-    animation: fallFruit1 10s ease-in-out infinite;
+    animation: fallFruit1 5s ease-in infinite;
 }
 .fruit4{
-    animation: fallFruit2 10s ease-in-out infinite;
+    animation: fallFruit2 5s ease-in infinite;
 }
 .fruit5{
-    animation: fallFruit1 10s ease-in-out infinite;
+    animation: fallFruit1 5s ease-in infinite;
 }
 .fruit1:hover{
     animation-play-state:paused;
@@ -702,10 +702,8 @@
 @keyframes fallFruit1{
     0% {
         transform: translateY(-300px) translateX(-150px) rotateZ(0deg) scale(0.8);
-        opacity: 0;
     }
     15% {
-        opacity: 1;
         transform: translateY(5vh) translateX(-50px) rotateZ(45deg) scale(1);
     }
     40% {
@@ -716,20 +714,16 @@
     }
     85% {
         transform: translateY(80vh) translateX(150px) rotateZ(180deg) scale(0.85);
-        opacity: 1;
     }
     100% {
-        transform: translateY(120vh) translateX(200px) rotateZ(225deg) scale(0.7);
-        opacity: 0;
+        transform: translateY(160vh) translateX(200px) rotateZ(225deg) scale(0.7);
     }
 }
 @keyframes fallFruit2{
     0% {
         transform: translateY(-300px) translateX(-150px) rotateZ(0deg) scale(0.8);
-        opacity: 0;
     }
     15% {
-        opacity: 1;
         transform: translateY(5vh) translateX(50px) rotateZ(-45deg) scale(1);
     }
     40% {
@@ -740,10 +734,8 @@
     }
     85% {
         transform: translateY(80vh) translateX(-150px) rotateZ(-180deg) scale(0.85);
-        opacity: 1;
     }
     100% {
-        transform: translateY(120vh) translateX(-200px) rotateZ(-225deg) scale(0.7);
-        opacity: 0;
+        transform: translateY(160vh) translateX(-200px) rotateZ(-225deg) scale(0.7);
     }
 }
