@@ -540,6 +540,12 @@ span{
     height: 100%;
     z-index: 3;
     position: relative;
+    div{
+        background-size: contain;
+        width: 30%;
+        height: auto;
+        aspect-ratio: 1/1;
+    }
 }
 .fruit1{
     position: absolute;
@@ -548,7 +554,6 @@ span{
     top: -10%;
     background-image: url("../assets/photos/fruit1.svg");
     background-repeat: no-repeat;
-    width: 50%;
     img{
         opacity: 0;
     }
