@@ -1173,6 +1173,136 @@ span{
         height: 22.8125vw;
     }
     .play-fruits{
-        padding: 1.875vw 0 0 13vw;
+        padding: 1.875vw 0 0 12.5vw;
     }
 }
+/*@media (min-width: 1921px){
+    main{
+        width: 1080px;
+        height: 1920px;
+        background-size: cover;
+    }
+    .square-letter{
+        font-size: 850px;
+        position: relative;
+        p{
+            position: absolute;
+            top: -244px;
+        }
+    }
+    .letter-info{
+        font-size: 30px;
+    }
+    .forth-screen{
+        width: 1920px;
+        height: 1080px;
+    }
+    .third-screen{
+        width: 1920px;
+        height: 1080px;
+    }
+    .tape{
+        width: 1920px;
+        height: 76px;
+        gap: 24px;
+        p{
+            font-size: 40px;
+        }
+    }
+    .second-screen{
+        width: 1920px;
+        height: 1080px;
+    }
+    .square-letter{
+        width: calc(100% / 2);
+    }
+    .vitamins{
+        font-size: 36px;
+        div{
+            font-size: 41px;
+            width: 350px;
+        }
+    }
+    .vitamins-span{
+        width: 350px;
+    }
+    .tomato{
+        img{
+            width: 130%;
+        }
+    }
+    .dnk{
+        div{
+            font-size: 32.5px;
+        }
+    }
+    .up-part-second-right-colomn{
+        position: relative;
+        img{
+            width: 80%;
+        }
+    }
+    .onion2{
+        position: absolute;
+        top: 160px;
+        left: -50px;
+        img{
+            width: 130%;
+        }
+    }
+    .mushroom{
+        img{
+            width: 160%;
+        }
+    }
+    .trees{
+        img{
+            width: 75%;
+        }
+    }
+    .tasty{
+        font-size: 50px;
+        padding: 35px 36px;
+    }
+    .span-tasty{
+        width: 385px;
+    }
+    .circle{
+        width: 160px;
+        height: 160px;
+    }
+    .third-right-colomn{
+        gap: 22px;
+        img{
+            width: 130px;
+        }
+    }
+    .gears{
+        img{
+            width: 339px;
+            height: 371px;
+        }
+    }
+    .tape-robots{
+        height: 53px;
+        padding: 0 27px;
+        p{
+            font-size: 24px;
+        }
+    }
+    .footer{
+        height: 53px;
+        padding: 0 27px;
+        p{
+            font-size: 3225px;
+        }
+    }
+    .up-text{
+        font-size:225px;
+        padding: 17.5px 18.8px;
+    }
+    .down-text{
+        font-size:265px;
+        height: 192px;
+    }
+}*/
