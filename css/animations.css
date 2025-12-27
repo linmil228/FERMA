@@ -484,24 +484,20 @@
         opacity: 1;
     }
 }
-.circle{
-    transition: all 0.5s linear;
-    animation: fallDown 15s infinite linear;
-    cursor: pointer;
+.circle:hover{
     .img{
         animation: rotateTomato 5s infinite linear;
     }
 }
-
+.third-right-colomn{
+    animation: fallDown 10s infinite linear;
+}
 @keyframes fallDown{
     0% {
-        transform: translateY(-1000px);
-    }
-    99.9% {
-        transform: translateY(500px);
+        top: 0;
     }
     100%{
-        transform: translateY(-1000px);
+        top: 100%;
     }
 }
 @keyframes rotateTomato{
@@ -539,17 +535,27 @@
     }
 }
 .tape-things{
-    animation: runTape 10s linear infinite;
+    animation: runTape 20s linear infinite;
+    animation-delay: -20s;
 }
 .tape-things2{
-    animation: runTape 10s linear infinite;
+    animation: runTape2 20s linear infinite;
+    animation-delay: -10s;
 }
 @keyframes runTape{
     0%{
-        transform: translateX(0);
+        transform: translateX(0%);
     }
     100%{
         transform: translateX(100%);
+    }
+}
+@keyframes runTape2{
+    0%{
+        transform: translateX(-100%);
+    }
+    100%{
+        transform: translateX(0%);
     }
 }
 .tape-robots-original{
@@ -578,79 +584,39 @@
     animation-play-state: paused;
     background-image: url(../assets/photos/fall1-hover.svg);
 }
-.falling-image{
-    animation: rotation 10s infinite linear;
-}
-.fallen1{
-    transform-origin: center;
-    animation: fallBrocolli 10s infinite linear;
-}
 .fallen2:hover{
     animation-play-state: paused;
     background-image: url(../assets/photos/fall2-hover.svg);
-}
-.fallen2{
-    transform-origin: center;
-    animation: fallBrocolli 10s infinite linear;
 }
 .fallen3:hover{
     animation-play-state: paused;
     background-image: url(../assets/photos/fall3-hover.svg);
 }
-.fallen3{
-    transform-origin: center;
-    animation: fallBrocolli 10s infinite linear;
-}
 .fallen4:hover{
     animation-play-state: paused;
     background-image: url(../assets/photos/fall4-hover.svg);
-}
-.fallen4{
-    transform-origin: center;
-    animation: fallBrocolli 10s infinite linear;
 }
 .fallen5:hover{
     animation-play-state: paused;
     background-image: url(../assets/photos/fall5-hover.svg);
 }
-.fallen5{
-    transform-origin: center;
-    animation: fallBrocolli 10s infinite linear;
-}
 .fallen6:hover{
     animation-play-state: paused;
     background-image: url(../assets/photos/fall6-hover.svg);
-}
-.fallen6{
-    transform-origin: center;
-    animation: fallBrocolli 10s infinite linear;
 }
 .fallen7:hover{
     animation-play-state: paused;
     background-image: url(../assets/photos/fall7-hover.svg);
 }
-.fallen7{
-    transform-origin: center;
+.fallen-brocolli{
     animation: fallBrocolli 10s infinite linear;
-    
-}
-@keyframes rotation{
-    0%{
-        transform: rotate(0deg);
-    }
-    100%{
-        transform: rotate(360deg);
-    }
 }
 @keyframes fallBrocolli{
     0%{
-        transform: translateY(-10%);
-    }
-    99.9%{
-        transform: translateY(101%);
+        top: 0; 
     }
     100%{
-        transform: translateY(-10%);
+        top: 100%
     }
 }
 .grass{
@@ -686,18 +652,33 @@
 }
 .fruit1:hover{
     animation-play-state:paused;
+    img{
+        opacity: 1;
+    }
 }
 .fruit2:hover{
     animation-play-state:paused;
+    img{
+        opacity: 1;
+    }
 }
 .fruit3:hover{
     animation-play-state:paused;
+    img{
+        opacity: 1;
+    }
 }
 .fruit4:hover{
     animation-play-state:paused;
+    img{
+        opacity: 1;
+    }
 }
 .fruit5:hover{
     animation-play-state:paused;
+    img{
+        opacity: 1;
+    }
 }
 @keyframes fallFruit1{
     0% {

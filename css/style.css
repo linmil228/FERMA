@@ -10,11 +10,11 @@ body{
     flex-direction: column;
     align-items: center;
     background-color: #94A0AF;
-    overflow-x: hidden
+    overflow-x: hidden;
 }
 main{
-    width: 1920px;
     height: 1080px;
+    width: 100%;
     display: flex;
     position: relative;
     background-image: url("../assets/photos/main-screen-background.svg");
@@ -24,7 +24,6 @@ span{
     height: fit-content;
     background-color: white;
     border: 2px solid white;
-    margin: 0;
     display: flex;
 }
 .left-colomn{
@@ -68,10 +67,10 @@ span{
 }
 .square-letter{
     height: calc(100% / 3);
-    width: calc(1056px / 2 - 1px);
+    width: calc(100% / 2);
     font-family: "Stolzl";
     font-weight: 900;
-    font-size: 850px;
+    font-size: 44.27vw;
     overflow: hidden;
     display: flex;
     flex-wrap: wrap;
@@ -121,7 +120,7 @@ span{
     background-image: url("../assets/photos/letter-info-background.svg");
     background-size: cover;
     font-family: "IF Kica";
-    font-size: 31px;
+    font-size: 1.61vw;
     font-weight: 500;
     display: flex;
     align-items: center;
@@ -146,58 +145,61 @@ span{
     height: calc(100%/3);
 }
 .second-screen{
-    width: 1920px;
     height: 1080px;
     display: flex;
     position: relative;
+    width: 100%;
 }
 .second-left-colomn{
     width: 22.5%;
     height: 100%;
     background-color: #8C3651;
     overflow: hidden;
+    position: relative;
 }
 .fallen-brocolli{
-    height: 200%;
+    height: 100%;
+    width: 150%;
+    position: absolute;
     display: flex;
     flex-direction: column;
     align-items: center;
+    gap: 10px;
     div{
         display: flex;
-        width: 60%;
+        width: 70%;
         cursor: pointer;
-        height: 10%;
+        height: 70%;
         background-size: contain;
         background-repeat: no-repeat;
+        position: relative;
     }
 }
 .fallen1{
-    justify-content: flex-end;
     background-image: url('../assets/photos/fall1.svg');
+    position: absolute;
+    left: 2%;
 }
 .fallen2{
-    justify-content: flex-start;
     background-image: url('../assets/photos/fall2.svg');
 }
 .fallen3{
-    justify-content: center;
     background-image: url('../assets/photos/fall3.svg');
 }
 .fallen4{
-    justify-content: flex-start;
     background-image: url('../assets/photos/fall4.svg');
 }
 .fallen5{
-    justify-content: flex-start;
     background-image: url('../assets/photos/fall5.svg');
 }
 .fallen6{
-    justify-content: flex-start;
     background-image: url('../assets/photos/fall6.svg');
 }
 .fallen7{
-    justify-content: flex-start;
     background-image: url('../assets/photos/fall7.svg');
+}
+#double-brocolli{
+    transform: translateY(-102%);
 }
 .center-part{
     width: 55%;
@@ -260,20 +262,20 @@ span{
     flex-direction: column;
     padding: 24px 36px;
     font-family: "IF Kica";
-    font-size: 36px;
+    font-size: 1.875vw;
     justify-content: space-between;
     div{
         display: flex;
         flex-direction: row;
         gap: 10px;
-        font-size: 41px;
+        font-size: 2.135vw;
         background-color: white;
-        width: 350px;
+        width: 18.229vw;
     }
 }
 .vitamins-span{
-    width: 350px;
-    height: 43px;
+    width: 18.229vw;
+    height: 3vw;
 }
 .mushroom{
     width: 100%;
@@ -313,14 +315,15 @@ span{
     position: relative;
 }
 .tape{
-    width: 1920px;
     height: 76px;
     background-color: white;
     display: flex;
     flex-direction: row;
-    gap: 30px;
+    gap: 100%;
     align-items: center;
     overflow: hidden;
+    width: 100%;
+    position: relative;
     p{
         font-family: "IF Kica";
         font-size: 50px;
@@ -332,18 +335,16 @@ span{
     flex-direction: row;
     gap: 30px;
     width: 200%;
+    white-space: nowrap;
 }
-.tape-things2{
-    display: flex;
-    flex-direction: row;
-    gap: 30px;
-    width: 200%;
+#double-tape{
+    transform: translateX(-100%);
 }
 .third-screen{
-    width: 1920px;
-    height: 1003px;
+    height: 1080px;
     display: flex;
     flex-direction: row;
+    width: 100%;
 }
 .third-main-screen{
     width: 77.5%;
@@ -377,13 +378,13 @@ span{
     flex-direction: column;
     align-items: flex-start;
     font-family: "IF Kica";
-    font-size: 51px;
+    font-size: 2.656vw;
     justify-content: space-between;
     padding: 56px 45px;
 }
 .span-tasty{
-    width: 392px;
-    height: 180px;
+    width: 20.417vw;
+    height: 11vw;
 }
 .gears{
     width: 100%;
@@ -424,20 +425,22 @@ span{
     }
 }
 .third-right-colomn{
-    background-color: #8C3651;
-    display: flex;
-    flex-direction: column;
-    gap: 28px;
-    overflow: hidden;
-    justify-content: center;
-    align-items: center;
-    padding: 0 81px;
     width: 100%;
+    position: absolute;
+    display: flex;
+    gap: 28px;
+    flex-direction: column;
+    align-items: center;
 }
 .tomatos{
     width: 22.5%;
     height: 100%;
+    background-color: #8C3651;
+    position: relative;
     overflow: hidden;
+}
+#double-tomatos{
+    transform: translateY(-102%);
 }
 .circle{
     width: 200px;
@@ -452,10 +455,10 @@ span{
     }
 }
 .forth-screen{
-    width: 1920px;
     height: 1080px;
     display: flex;
     flex-direction: column;
+    width: 100%;
 }
 .tape-robots{
     width: 100%;
@@ -483,10 +486,10 @@ span{
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    padding: 0 34px;
+    padding: 0 1.771vw;
     color: white;
     p{
-        font-size: 30px;
+        font-size: 1.563vw;
         font-weight: 500;
         font-family: "IF Kica";
     }
@@ -506,6 +509,9 @@ span{
     display: flex;
     justify-content: center;
     align-items: center;
+    img{
+        width: 100%;
+    }
 }
 .play-fruits{
     width: 100%;
@@ -523,15 +529,15 @@ span{
     color:#121B13;
 }
 .up-text{
-    font-size: 225px;
-    padding: 23px 15px;
+    font-size: 11.719vw;
+    padding: 1.198vw 0.781vw;
     display: flex;
     justify-content: center;
 }
 .down-text{
-    font-size: 265px;
-    height: 198px;
-    padding: 0 15px;
+    font-size: 13.802vw;
+    height: 10.26vw;
+    padding: 0 0.781vw;
     display: flex;
     justify-content: center;
 }
@@ -545,6 +551,14 @@ span{
         width: 30%;
         height: auto;
         aspect-ratio: 1/1;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    img{
+        opacity: 0;
+        width: 30%;
+        height: 30%;
     }
 }
 .fruit1{
@@ -610,53 +624,52 @@ span{
 }
 @media (max-width: 1536px){
     main{
-        width: 1536px;
-        height: 736px;
+        height: 47.916vw;
         background-size: cover;
     }
     .square-letter{
-        font-size: 680px;
+        font-size: 44.271vw;
         position: relative;
         p{
             position: absolute;
-            top: -195px;
+            top: -12.695vw;
         }
     }
     .letter-info{
-        font-size: 24px;
+        font-size: 1.563vw;
     }
     .forth-screen{
-        width: 1536px;
-        height: 736px;
+        width: 100vw;
+        height: 47.916vw;
     }
     .third-screen{
-        width: 1536px;
-        height: 675px;
+        width: 100vw;
+        height: 736px;
     }
     .tape{
-        width: 1536px;
-        height: 61px;
+        width: 100vw;
+        height: 3.971vw;
         gap: 24px;
         p{
             font-size: 40px;
         }
     }
     .second-screen{
-        width: 1536px;
-        height: 736px;
+        width: 100vw;
+        height: 47.916vw;
     }
     .square-letter{
-        width: calc(864px / 2 - 10.5px);
+        width: calc(100% / 2);
     }
     .vitamins{
-        font-size: 29px;
+        font-size: 1.888vw;
         div{
-            font-size: 33px;
-            width: 280px;
+            font-size: 2.148vw;
+            width: 18.229vw;
         }
     }
     .vitamins-span{
-        width: 280px;
+        width: 18.229vw;
     }
     .tomato{
         img{
@@ -665,7 +678,7 @@ span{
     }
     .dnk{
         div{
-            font-size: 26px;
+            font-size: 1.693vw;
         }
     }
     .up-part-second-right-colomn{
@@ -693,11 +706,11 @@ span{
         }
     }
     .tasty{
-        font-size: 40px;
+        font-size: 2.604vw;
         padding: 35px 36px;
     }
     .span-tasty{
-        width: 308px;
+        width: 20.052vw;
     }
     .circle{
         width: 160px;
@@ -726,65 +739,65 @@ span{
         height: 53px;
         padding: 0 27px;
         p{
-            font-size: 24px;
+            font-size: 1.563vw;
         }
     }
     .up-text{
-        font-size:180px;
-        padding: 14px 15px;
+        font-size:11.719vw;
+        padding: 0.911vw 0.977vw;
     }
     .down-text{
-        font-size:212px;
-        height: 160px;
+        font-size:13.802vw;
+        height: 10vw;
     }
 }
 @media (max-width: 1280px){
     main{
-        width: 1280px;
-        height: 800px;
         background-size: cover;
+        width: 100%;
+        height: 62.5vw;
     }
     .square-letter{
-        font-size: 567px;
+        font-size: 44.297vw;
         p{
             position: static;
         }
     }
     .letter-info{
-        font-size: 20px;
-    }
-    .forth-screen{
-        width: 1280px;
-        height: 800px;
-    }
-    .third-screen{
-        width: 1280px;
-        height: 749px;
-    }
-    .tape{
-        width: 1280px;
-        height: 51px;
-        gap: 20px;
-        p{
-            font-size: 33px;
-        }
+        font-size: 1.563vw;
     }
     .second-screen{
-        width: 1280px;
-        height: 800px;
+        width: 100%;
+        height: 62.5vw;
+    }
+    .third-screen{
+        width: 100%;
+        height: 62.5vw;
+    }
+    .forth-screen{
+        width: 100%;
+        height: 62.5vw;
+    }
+    .tape{
+        width: 100%;
+        height: 3.984vw;
+        gap: 20px;
+        p{
+            font-size: 2.578vw;
+        }
     }
     .square-letter{
-        width: calc(720px / 2 - 9px);
+        width: calc(100% / 2);
     }
     .vitamins{
-        font-size: 24px;
+        font-size: 1.6vw;
         div{
-            font-size: 37px;
-            width: 310px;
+            font-size: 2vw;
+            width: 18vw;
         }
     }
     .vitamins-span{
-        width: 291px;
+        width: 18vw;
     }
     .tomato{
         img{
@@ -793,7 +806,7 @@ span{
     }
     .dnk{
         div{
-            font-size: 22px;
+            font-size: 1.719vw;
         }
     }
     .mushroom{
@@ -816,31 +829,31 @@ span{
     }
     .gears{
         img{
-            width: 282px;
-            height: 309px;
+            width: 22.031vw;
+            height: 24.121vw;
         }
     }
     .tape-robots{
-        height: 46px;
-        padding: 0 23px;
+        height: 3.594vw;
+        padding: 0 1.797vw;
         p{
-            font-size: 20px;
+            font-size: 1.563vw;
         }
     }
     .footer{
-        height: 46px;
-        padding: 0 23px;
+        height: 3.594vw;
+        padding: 0 1.797vw;
         p{
-            font-size: 20px;
+            font-size: 1.5625vw;
         }
     }
     .up-text{
-        font-size:150px;
-        padding: 14px 10px;
+        font-size:11.719vw;
+        padding: 1.094vw 0.781vw;
     }
     .down-text{
-        font-size:176px;
-        height: 130px;
+        font-size:13.75vw;
+        height: 10.156vw;
     }
 }
 @media (max-width: 768px){
@@ -851,15 +864,15 @@ span{
         display: flex;
     }
     main{
-        width: 768px;
-        height: 1024px;
+        width: 100%;
+        height: 133.333vw;
         background-size: cover;
     }
     .square-letter{
-        font-size: 614px;
+        font-size: 79.948vw;
     }
     .letter-info{
-        font-size: 22px;
+        font-size: 2.865vw;
     }
     .grass{
         background-position-x: center;
@@ -876,14 +889,14 @@ span{
     }
     .dnk{
         div{
-            font-size: 24px;
+            font-size: 3.125vw;
         }
     }
     .vitamins{
-        font-size: 26px;
+        font-size: 2.8vw;
         div{
-            font-size: 30px;
-            width: 260px;
+            font-size: 3.906vw;
+            width: 33.854vw;
         }
     }
     .trees{
@@ -892,31 +905,31 @@ span{
         }
     }
     .vitamins-span{
-        width: 260px;
-        height: 80px;
+        width: 33.854vw;
+        height: 10.417vw;
     }
     .tasty{
-        font-size: 26px;
+        font-size: 3vw;
     }
     .span-tasty{
-        width: 201.5px;
-        height: 350px;
+        width: 26.237vw;
+        height: 45.573vw;
     }
     .forth-screen{
-        width: 768px;
-        height: 1024px;
+        width: 100%;
+        height: 133.333vw;
     }
     .third-screen{
-        width: 768px;
-        height: 1024px;
+        width: 100%;
+        height: 133.333vw;
         flex-direction: column;
     }
     .third-main-screen{
         width: 100%;
-        height: 516px;
+        height: 67.1875vw;
     }
     .tomatos{
-        height: 508px;
+        height: 66.146vw;
         width: 100%;
         display: flex;
         align-items: center;
@@ -926,18 +939,18 @@ span{
         rotate: 90deg;
     }
     .tape{
-        width: 768px;
-        height: 30px;
-        gap: 12px;
+        width: 100%;
+        height: 3.906vw;
+        gap: 1.5625vw;
         p{
-            font-size: 20px;
+            font-size: 2.604vw;
         }
     }
     .second-screen{
-        width: 768px;
+        width: 100%;
         height: fit-content;
         grid-template-columns: [start] 50% [line2] 50% [end];
-        grid-template-rows: [row1-start] 1024px [row1-end] 1024px [last];
+        grid-template-rows: [row1-start] 133.333vw [row1-end] 133.333vw [last];
         display: grid;
     }
     .main-logo-wrap{
@@ -962,10 +975,10 @@ span{
         width: 100%;
     }
     .tape-robots{
-        height: 28px;
-        padding: 0 13px;
+        height: 3.646vw;
+        padding: 0 1.693vw;
         p{
-            font-size: 12px;
+            font-size: 1.5625vw;
         }
     }
     .gears{
@@ -978,29 +991,35 @@ span{
         height: 50%;
     }
     .footer{
-        height: 28px;
-        padding: 0 13px;
+        height: 3.646vw;
+        padding: 0 1.693vw;
         p{
-            font-size: 12px;
+            font-size: 1.5625vw;
         }
     }
     .up-text{
-        font-size:90px;
-        padding: 0 10px;
+        font-size: 11vw;
+        padding: 0 1.302vw;
     }
     .down-text{
-        font-size:106px;
-        height: 148px;
+        font-size: 13vw;
+        height: 19.271vw;
     }
     .rotated-texture{
         rotate: 90deg;
     }
     .play-fruits{
         height: 107%;
-        padding: 10px 0 0 30px;
+        width: 100%;
+        padding: 1.302vw 0 0 6.906vw;
+    }
+    .rotated-texture{
+        img{
+            width: 140%;
+        }
     }
 }
-@media (max-width: 431px){
+@media (max-width: 400px){
     .dekstop-only{
         display: none;
     }
@@ -1009,19 +1028,19 @@ span{
     }
     main{
         width: 100%;
-        height: 475px;
+        height: 148.4375vw;
         background-size: cover;
     }
     .square-letter{
-        font-size: 256px;
+        font-size: 80vw;
     }
     .letter-info{
-        font-size: 8px;
+        font-size: 2.5vw;
     }
     .dnk{
         div{
-            font-size: 10px;
-            padding: 3px;
+            font-size: 3.125vw;
+            padding: 0.9375vw;
         }
     }
     .tomato{
@@ -1030,19 +1049,19 @@ span{
         }
     }
     .vitamins{
-        font-size: 10px;
-        padding: 7px 11px;
+        font-size: 3.125vw;
+        padding: 2.1875vw 3.4375vw;
         div{
-            font-size: 12px;
-            width: 110px;
+            font-size: 3.75vw;
+            width: 34.375vw;
         }
     }
     .vitamins-span{
-        width: 110px;
+        width: 34.375vw;
     }
     .onion2{
-        top: -60px;
-        left: -350px;
+        top: -18.75vw;
+        left: -109.375vw;
         img{
             width: 70%;
         }
@@ -1053,58 +1072,58 @@ span{
         }
     }
     .tasty{
-        font-size: 10px;
-        padding: 12px 10px;
+        font-size: 3.125vw;
+        padding: 3.75vw 3.125vw;
     }
     .span-tasty{
-        width: 79.5px;
+        width: 24.844vw;
     }
     .forth-screen{
         width: 100%;
-        height: 475px;
+        height: 148.4375vw;
     }
     .third-screen{
         width: 100%;
-        height: 462px;
+        height: 144.375vw;
         flex-direction: column;
     }
     .third-main-screen{
         width: 100%;
-        height: 215px;
+        height: 67.1875vw;
     }
     .tape{
         width: 100%;
-        height: 13px;
-        gap: 5px;
+        height: 4.0625vw;
+        gap: 1.5625vw;
         p{
-            font-size: 8px;
+            font-size: 2.5vw;
         }
     }
     .gears{
         img{
-            width: 91px;
-            height: 99px;
+            width: 28.4375vw;
+            height: 30.9375vw;
         }
     }
     .up-gears{
-        gap: 10px;
+        gap: 3.125vw;
     }
     .down-gears{
-        gap: 10px;
+        gap: 3.125vw;
     }
     .circle{
-        width: 63px;
-        height: 63px;
+        width: 19.6875vw;
+        height: 19.6875vw;
         img{
-            width: 55px;
-            height: 55px;
+            width: 17.1875vw;
+            height: 17.1875vw;
         }
     }
     .second-screen{
         width: 100%;
         height: fit-content;
         grid-template-columns: [start] 50% [line2] 50% [end];
-        grid-template-rows: [row1-start] 475px [row1-end] 475px [last];
+        grid-template-rows: [row1-start] 148.4375vw [row1-end] 148.4375vw [last];
         display: grid;
     }
     .main-logo-wrap{
@@ -1119,6 +1138,9 @@ span{
         grid-column: 1;
         width: 100%;
     }
+    .tomatos{
+        height: 77.146vw;
+    }
     .center-part{
         grid-column: 1 / span 2;
         width: 100%;
@@ -1129,28 +1151,28 @@ span{
         width: 100%;
     }
     .tape-robots{
-        height: 12px;
-        padding: 0 6px;
+        height: 3.75vw;
+        padding: 0 1.875vw;
         p{
-            font-size: 5px;
+            font-size: 1.5625vw;
         }
     }
     .footer{
-        height: 12px;
-        padding: 0 6px;
+        height: 3.75vw;
+        padding: 0 1.875vw;
         p{
-            font-size: 5px;
+            font-size: 1.5625vw;
         }
     }
     .up-text{
-        font-size:37px;
-        padding: 0 10px;
+        font-size:11vw;
+        padding: 0 3.125vw;
     }
     .down-text{
-        font-size:44px;
-        height: 65px;
+        font-size:13vw;
+        height: 22.8125vw;
     }
     .play-fruits{
-        padding: 6px 0 0 40px;
+        padding: 1.875vw 0 0 13vw;
     }
 }
