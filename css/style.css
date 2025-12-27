@@ -521,23 +521,21 @@ span{
     justify-content: space-between;
     font-family: "IF Kica";
     font-weight: 900;
-    padding: 13px 0 0 0.5%;
+    padding: 13px 0 0 0;
     position: absolute;
     z-index: 2;
     top: 0;
-    left: -25px;
     color:#121B13;
 }
 .up-text{
     font-size: 11.719vw;
-    padding: 1.198vw 0.781vw;
+    padding: 1.198vw 0;
     display: flex;
     justify-content: center;
 }
 .down-text{
     font-size: 13.802vw;
     height: 10.26vw;
-    padding: 0 0.781vw;
     display: flex;
     justify-content: center;
 }
@@ -644,14 +642,14 @@ span{
     }
     .third-screen{
         width: 100vw;
-        height: 736px;
+        height: 47.916vw;
     }
     .tape{
         width: 100vw;
         height: 3.971vw;
-        gap: 24px;
+        gap: 1.56vw;
         p{
-            font-size: 40px;
+            font-size: 2.6vw;
         }
     }
     .second-screen{
@@ -689,8 +687,8 @@ span{
     }
     .onion2{
         position: absolute;
-        top: 160px;
-        left: -50px;
+        top: 10.4vw;
+        left: -3.255vw;
         img{
             width: 130%;
         }
@@ -707,44 +705,44 @@ span{
     }
     .tasty{
         font-size: 2.604vw;
-        padding: 35px 36px;
+        padding: 2.279vw 2.34vw;
     }
     .span-tasty{
         width: 20.052vw;
     }
     .circle{
-        width: 160px;
-        height: 160px;
+        width: 10.417vw;
+        height: 10.417vw;
     }
     .third-right-colomn{
-        gap: 22px;
+        gap: 1.43vw;
         img{
-            width: 130px;
+            width: 8.46vw;
         }
     }
     .gears{
         img{
-            width: 339px;
-            height: 371px;
+            width: 22.07vw;
+            height: 24.15vw;
         }
     }
     .tape-robots{
-        height: 53px;
-        padding: 0 27px;
+        height: 3.451vw;
+        padding: 0 1.758vw;
         p{
-            font-size: 24px;
+            font-size: 1.563vw;
         }
     }
     .footer{
-        height: 53px;
-        padding: 0 27px;
+        height: 3.451vw;
+        padding: 0 1.758vw;
         p{
             font-size: 1.563vw;
         }
     }
     .up-text{
         font-size:11.719vw;
-        padding: 0.911vw 0.977vw;
+        padding: 0.911vw 0;
     }
     .down-text{
         font-size:13.802vw;
@@ -781,7 +779,7 @@ span{
     .tape{
         width: 100%;
         height: 3.984vw;
-        gap: 20px;
+        gap: 1.5625vw;
         p{
             font-size: 2.578vw;
         }
@@ -813,7 +811,7 @@ span{
         position: relative;
         img{
             position: absolute;
-            left: -80px;
+            left: -6.25vw;
             width: 190%;
         }
     }
@@ -849,7 +847,7 @@ span{
     }
     .up-text{
         font-size:11.719vw;
-        padding: 1.094vw 0.781vw;
+        padding: 1.094vw 0
     }
     .down-text{
         font-size:13.75vw;
@@ -937,6 +935,18 @@ span{
     .third-right-colomn{
         width: 100%;
         rotate: 90deg;
+        animation: anotherFall 10s infinite linear;
+    }
+    #double-tomatos{
+        transform: translateX(-102%);
+    }
+    @keyframes anotherFall{
+        0% {
+            left: 0;
+        }
+        100%{
+            left: 100%;
+        }
     }
     .tape{
         width: 100%;
@@ -999,24 +1009,25 @@ span{
     }
     .up-text{
         font-size: 11vw;
-        padding: 0 1.302vw;
     }
     .down-text{
         font-size: 13vw;
-        height: 19.271vw;
+        height: 9.271vw;
     }
     .rotated-texture{
         rotate: 90deg;
     }
     .play-fruits{
-        height: 107%;
-        width: 100%;
-        padding: 1.302vw 0 0 6.906vw;
+        padding: 1.302vw 0 0 0;
     }
     .rotated-texture{
         img{
             width: 140%;
         }
+    }
+    .circle{
+        width: 19.417vw;
+        height: 19.417vw;
     }
 }
 @media (max-width: 400px){
@@ -1061,7 +1072,7 @@ span{
     }
     .onion2{
         top: -18.75vw;
-        left: -109.375vw;
+        left: -79.375vw;
         img{
             width: 70%;
         }
@@ -1166,143 +1177,21 @@ span{
     }
     .up-text{
         font-size:11vw;
-        padding: 0 3.125vw;
     }
     .down-text{
         font-size:13vw;
-        height: 22.8125vw;
-    }
-    .play-fruits{
-        padding: 1.875vw 0 0 12.5vw;
+        height: 8.8125vw;
     }
 }
-/*@media (min-width: 1921px){
-    main{
-        width: 1080px;
-        height: 1920px;
-        background-size: cover;
-    }
-    .square-letter{
-        font-size: 850px;
-        position: relative;
-        p{
-            position: absolute;
-            top: -244px;
-        }
-    }
+@media (max-width: 226px){
     .letter-info{
-        font-size: 30px;
-    }
-    .forth-screen{
-        width: 1920px;
-        height: 1080px;
-    }
-    .third-screen{
-        width: 1920px;
-        height: 1080px;
-    }
-    .tape{
-        width: 1920px;
-        height: 76px;
-        gap: 24px;
-        p{
-            font-size: 40px;
-        }
-    }
-    .second-screen{
-        width: 1920px;
-        height: 1080px;
+        font-size: 1.9vw;
     }
     .square-letter{
-        width: calc(100% / 2);
-    }
-    .vitamins{
-        font-size: 36px;
-        div{
-            font-size: 41px;
-            width: 350px;
-        }
-    }
-    .vitamins-span{
-        width: 350px;
-    }
-    .tomato{
-        img{
-            width: 130%;
-        }
-    }
-    .dnk{
-        div{
-            font-size: 32.5px;
-        }
-    }
-    .up-part-second-right-colomn{
-        position: relative;
-        img{
-            width: 80%;
-        }
+        height: calc((100% / 3) + 15px);
     }
     .onion2{
-        position: absolute;
-        top: 160px;
-        left: -50px;
-        img{
-            width: 130%;
-        }
+        top: -98.75vw;
+        left: -129.375vw;
     }
-    .mushroom{
-        img{
-            width: 160%;
-        }
-    }
-    .trees{
-        img{
-            width: 75%;
-        }
-    }
-    .tasty{
-        font-size: 50px;
-        padding: 35px 36px;
-    }
-    .span-tasty{
-        width: 385px;
-    }
-    .circle{
-        width: 160px;
-        height: 160px;
-    }
-    .third-right-colomn{
-        gap: 22px;
-        img{
-            width: 130px;
-        }
-    }
-    .gears{
-        img{
-            width: 339px;
-            height: 371px;
-        }
-    }
-    .tape-robots{
-        height: 53px;
-        padding: 0 27px;
-        p{
-            font-size: 24px;
-        }
-    }
-    .footer{
-        height: 53px;
-        padding: 0 27px;
-        p{
-            font-size: 3225px;
-        }
-    }
-    .up-text{
-        font-size:225px;
-        padding: 17.5px 18.8px;
-    }
-    .down-text{
-        font-size:265px;
-        height: 192px;
-    }
-}*/
+}
