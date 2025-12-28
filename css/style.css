@@ -14,7 +14,7 @@ body{
 }
 main{
     height: 1080px;
-    width: 100%;
+    width: 1920px;
     display: flex;
     position: relative;
     background-image: url("../assets/photos/main-screen-background.svg");
@@ -70,7 +70,7 @@ span{
     width: calc(100% / 2);
     font-family: "Stolzl";
     font-weight: 900;
-    font-size: 44.27vw;
+    font-size: 850px;
     overflow: hidden;
     display: flex;
     flex-wrap: wrap;
@@ -120,7 +120,7 @@ span{
     background-image: url("../assets/photos/letter-info-background.svg");
     background-size: cover;
     font-family: "IF Kica";
-    font-size: 1.61vw;
+    font-size: 31.5px;
     font-weight: 500;
     display: flex;
     align-items: center;
@@ -148,7 +148,7 @@ span{
     height: 1080px;
     display: flex;
     position: relative;
-    width: 100%;
+    width: 1920px;
 }
 .second-left-colomn{
     width: 22.5%;
@@ -158,7 +158,7 @@ span{
     position: relative;
 }
 .fallen-brocolli{
-    height: 100%;
+    height: 99%;
     width: 150%;
     position: absolute;
     display: flex;
@@ -262,20 +262,20 @@ span{
     flex-direction: column;
     padding: 24px 36px;
     font-family: "IF Kica";
-    font-size: 1.875vw;
+    font-size: 36px;
     justify-content: space-between;
     div{
         display: flex;
         flex-direction: row;
         gap: 10px;
-        font-size: 2.135vw;
+        font-size: 41px;
         background-color: white;
-        width: 18.229vw;
+        width: 350px;
     }
 }
 .vitamins-span{
-    width: 18.229vw;
-    height: 3vw;
+    width: 350px;
+    height: 57.6px;
 }
 .mushroom{
     width: 100%;
@@ -322,7 +322,7 @@ span{
     gap: 100%;
     align-items: center;
     overflow: hidden;
-    width: 100%;
+    width: 1920px;
     position: relative;
     p{
         font-family: "IF Kica";
@@ -332,10 +332,9 @@ span{
 }
 .tape-things{
     display: flex;
-    flex-direction: row;
     gap: 30px;
-    width: 200%;
-    white-space: nowrap;
+    width: 100%;
+    position: absolute;
 }
 #double-tape{
     transform: translateX(-100%);
@@ -344,7 +343,7 @@ span{
     height: 1080px;
     display: flex;
     flex-direction: row;
-    width: 100%;
+    width: 1920px;
 }
 .third-main-screen{
     width: 77.5%;
@@ -378,13 +377,13 @@ span{
     flex-direction: column;
     align-items: flex-start;
     font-family: "IF Kica";
-    font-size: 2.656vw;
+    font-size: 51px;
     justify-content: space-between;
     padding: 56px 45px;
 }
 .span-tasty{
-    width: 20.417vw;
-    height: 11vw;
+    width: 392px;
+    height: 211px;
 }
 .gears{
     width: 100%;
@@ -394,39 +393,44 @@ span{
     display: flex;
     flex-direction: column;
     overflow: hidden;
+    position: relative;
     img{
         width: 424px;
         height: 464px;
     }
+    div{
+        width: 103%;
+        height: 50%;
+    }
 }
 .up-gears{
-    width: 200%;
-    height: 48%;
-    overflow: hidden;
     display: flex;
-    flex-direction: row;
     gap: 47px;
     justify-content: center;
     align-items: flex-end;
     overflow: hidden;
+    position: absolute;
+}
+#double-up-gears{
+    transform: translateX(92%);
 }
 .down-gears{
-    width: 200%;
-    height: 48%;
-    overflow: hidden;
     display: flex;
-    flex-direction: row;
     gap: 47px;
     justify-content: center;
     align-items: flex-start;
     overflow: hidden;
+    position: absolute;
     img{
         rotate: 180deg;
     }
 }
+#double-down-gears{
+    transform: translateX(-92%);
+}
 .third-right-colomn{
     width: 100%;
-    height: 170%;
+    height: 171%;
     position: absolute;
     display: flex;
     gap: 28px;
@@ -441,7 +445,7 @@ span{
     overflow: hidden;
 }
 #double-tomatos{
-    transform: translateY(-102%);
+    transform: translateY(-87%);
 }
 .circle{
     width: 200px;
@@ -459,7 +463,7 @@ span{
     height: 1080px;
     display: flex;
     flex-direction: column;
-    width: 100%;
+    width: 1920px;
 }
 .tape-robots{
     width: 100%;
@@ -487,10 +491,10 @@ span{
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    padding: 0 1.771vw;
+    padding: 0 34px;
     color: white;
     p{
-        font-size: 1.563vw;
+        font-size: 30px;
         font-weight: 500;
         font-family: "IF Kica";
     }
@@ -529,14 +533,14 @@ span{
     color:#121B13;
 }
 .up-text{
-    font-size: 11.719vw;
-    padding: 1.198vw 0;
+    font-size: 225px;
+    padding: 23px 0;
     display: flex;
     justify-content: center;
 }
 .down-text{
-    font-size: 13.802vw;
-    height: 10.26vw;
+    font-size: 265px;
+    height: 197px;
     display: flex;
     justify-content: center;
 }
@@ -621,6 +625,122 @@ span{
 .mobile-only{
     display: none;
 }
+@media (max-width: 1919px){
+    main{
+        width: 100vw;
+        height: 56.25vw;
+    }
+    .square-letter{
+        font-size: 44.27vw;
+    }
+    .letter-info{
+        font-size: 1.61vw;
+        padding: 2.344vw 0.677vw;
+    }
+    .second-screen{
+        width: 100vw;
+        height: 56.25vw;
+    }
+    .fallen-brocolli{
+        gap: 0.521vw;
+    }
+    .dnk{
+        div{
+            font-size: 1.72vw;
+            padding: 0.677vw;
+        }
+    }
+    .vitamins{
+        padding: 1.25vw 1.875vw;
+        font-size: 1.875vw;
+        div{
+            gap: 0.521vw;
+            font-size: 2.135vw;
+            width: 18.229vw;
+        }
+    }
+    .vitamins-span{
+        width: 18.229vw;
+        height: 3vw;
+    }
+    .up-part-second-right-colomn{
+        height: calc(100% / 1.5 + 2.5vw);
+    }
+    .down-part-second-right-colomn{
+        height: calc(100% / 1.5 + 2.5vw);
+    }
+    .tape{
+        height: 4vw;
+        width: 100vw;
+        p{
+            font-size: 2.6vw;
+        }
+    }
+    .tape-things{
+        gap: 1.56vw;
+    }
+    .third-screen{
+        height: 56.25vw;
+        width: 100vw;
+    }
+    .trees{
+        gap:1.1vw
+    }
+    .tasty{
+        font-size: 2.656vw;
+        padding: 2.9vw 2.344vw;
+    }
+    .span-tasty{
+        width: 20.417vw;
+        height: 11vw;
+    }
+    .gears{
+        img{
+            width: 22.083vw;
+            height: 24.167vw;
+        }
+    }
+    .up-gears{
+        gap: 2.448vw;
+    }
+    .down-gears{
+        gap: 2.448vw;
+    }
+    .third-right-colomn{
+        gap: 1.458vw;
+    }
+    .circle{
+        width: 10.417vw;
+        height: 10.417vw;
+    }
+    .forth-screen{
+        width: 100vw;
+        height: 56.25vw;
+    }
+    .tape-robots{
+        padding: 0 1.771vw;
+        p{
+            font-size: 1.5625vw;
+        }
+    }
+    .footer{
+        padding: 0 1.771vw;
+        p{
+            font-size: 1.563vw;
+        }
+    }
+    .play-fruits{
+        padding: 0.677vw 0 0 0;
+    }
+    .up-text{
+        font-size: 11.719vw;
+        padding: 1.198vw 0;
+    }
+    .down-text{
+        font-size: 13.802vw;
+        height: 10.26vw;
+    }
+
 @media (max-width: 1536px){
     main{
         height: 47.916vw;
@@ -798,6 +918,9 @@ span{
     .vitamins-span{
         width: 18vw;
     }
+    #double-tomatos{
+        transform: translateY(-78%);
+    }
     .tomato{
         img{
             width: 155%;
@@ -903,6 +1026,17 @@ span{
             width: 90%;
         }
     }
+    #double-up-gears{
+        transform: translateX(95%);
+    }
+    #double-down-gears{
+        transform: translateX(-95%);
+    }
+    .gears{
+        div{
+            width: 103%;
+        }
+    }
     .vitamins-span{
         width: 33.854vw;
         height: 10.417vw;
@@ -935,11 +1069,12 @@ span{
     }
     .third-right-colomn{
         width: 100%;
+        height: 250%;
         rotate: 90deg;
         animation: anotherFall 10s infinite linear;
     }
     #double-tomatos{
-        transform: translateX(-102%);
+        transform: translateY(89%);
     }
     @keyframes anotherFall{
         0% {
@@ -1068,6 +1203,9 @@ span{
             width: 34.375vw;
         }
     }
+    #double-tomatos{
+        transform: translateY(77%);
+    }
     .vitamins-span{
         width: 34.375vw;
     }
@@ -1183,6 +1321,17 @@ span{
         font-size:13vw;
         height: 8.8125vw;
     }
+    #double-up-gears{
+        transform: translateX(90%);
+    }
+    #double-down-gears{
+        transform: translateX(-90%);
+    }
+    .gears{
+        div{
+            width: 105%;
+        }
+    }
 }
 @media (max-width: 226px){
     .letter-info{
@@ -1195,4 +1344,5 @@ span{
         top: -98.75vw;
         left: -129.375vw;
     }
+}
 }
